@@ -100,7 +100,7 @@ Follwing is the result of above method:
 
 ####2. Ultimately I searched on two scales using YCrCb 3-channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result.  example image:
 
-![alt text][image10]
+![alt text][image9]
 ---
 
 ### Video Implementation
@@ -112,7 +112,7 @@ Follwing is the result of above method:
 
 
 ### Here are six frames and their corresponding heatmaps and output of `scipy.ndimage.measurements.label()` on the integrated heatmap from all six frames and resulting bounding boxes are drawn:
-![alt text][image9]
+![alt text][image10]
 
 ---
 
