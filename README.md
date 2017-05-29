@@ -2,36 +2,36 @@
 
 The goals / steps of this project are the following:
 
-* Feature extraction
-** Perform a Histogram of Oriented Gradients (HOG) feature extraction on images
-** apply a color transform
-** append binned color features
-** append histograms of color
-** normalize the features
+##Feature extraction
+####Perform a Histogram of Oriented Gradients (HOG) feature extraction on images
+####apply a color transform
+####append binned color features
+####append histograms of color
+####normalize the features
 
-* Training the classifier
-** Download dataset
-** split dataset into test and train using sklearn train_test_split function
-** Extract feature for data (image in our case)
-** Train a classifier Linear SVM classifier using sklearn python module
+##Training the classifier
+####Download dataset
+####split dataset into test and train using sklearn train_test_split function
+####Extract feature for data (image in our case)
+####Train a classifier Linear SVM classifier using sklearn python module
 
-* Run the classifier on test image to detect cars
-** Implemented technique described in lessons, which only has to extract hog features once and then can be sub-sampled to get all of its overlaying windows
-** Using our trained classifier to search for vehicles in images.
-** Use heat map technique for remove noise and multiple window detections.
-** Estimate a bounding box for vehicles detected.
+##Run the classifier on test image to detect cars
+####Implemented technique described in lessons, which only has to extract hog features once and then can be sub-sampled to get all of its overlaying windows
+####Using our trained classifier to search for vehicles in images.
+####Use heat map technique for remove noise and multiple window detections.
+####Estimate a bounding box for vehicles detected.
 
 [//]: # (Image References)
-[image1]: ./my_images/car_not_car.png
-[image2]: ./my_images/car.jpg
-[image3]: ./my_images/car_hog.jpg
-[image4]: ./my_images/notcar.jpg
-[image5]: ./my_images/notcar_hog.jpg
-[image6]: ./my_images/test_image_y_start_stop_none.png
-[image7]: ./my_images/after_y_start_stop400x660.png
-[image8]: ./my_images/scaled_detected.png
-[image9]: ./my_images/heat_map.png
-[image10]: ./my_images/label_heat_map.png
+[image1]: ./my_image/car_not_car.png
+[image2]: ./my_image/car.jpg
+[image3]: ./my_image/car_hog.jpg
+[image4]: ./my_image/notcar.jpg
+[image5]: ./my_image/notcar_hog.jpg
+[image6]: ./my_image/test_image_y_start_stop_none.png
+[image7]: ./my_image/after_y_start_stop400x660.png
+[image8]: ./my_image/scaled_detected.png
+[image9]: ./my_image/heat_map.png
+[image10]: ./my_image/label_heat_map.png
 [video1]: ./test.mp4
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
@@ -66,7 +66,7 @@ Parameters selected were:
   pix_per_cell = 8 # HOG pixels per cell
   cell_per_block = 2 # HOG cells per block
   hog_channel = "ALL" # Can be 0, 1, 2, or "ALL"
-  ```
+```
 
 ####2. I trained a classifier using your selected HOG features and color features.
 
@@ -81,7 +81,8 @@ I trained a linear SVM using sklearn LinearSVC() function and used train_test_sp
     y_start_stop = [400, 656]
     overlap = 50%
     xy_window = (96, 96)
-    ```
+```
+
 Following is the image showing detection of Vehicle using Full image sliding window search.
 
 ![alt text][image6]
